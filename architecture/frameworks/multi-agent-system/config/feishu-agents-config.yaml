@@ -1,0 +1,24 @@
+# 飞书多Agent配置文件
+# 安全提醒：此文件包含敏感信息，请勿提交到代码仓库
+
+agents:
+  docAgent:
+    name: DocAgent
+    appId: cli_a92e72365878dcca
+    appSecret: Ch1i5KkKxafcERSOsq6VzfCpxJYxEJ1O
+    description: 文档知识域Agent，负责文档读写、Wiki编辑、知识库管理
+    permissions:
+      - docx:document
+      - wiki:wiki
+      - drive:drive
+
+  calendarAgent:
+    name: CalendarAgent
+    appId: cli_a92e72dd16b8dcc7
+    appSecret: ohLrgJmOXLjyMmYpqhuxthMNhxPTxhKl
+    description: 日程协调域Agent，负责日程管理、会议安排、提醒通知
+    permissions:
+      - calendar:calendar
+      - calendar:event
+
+# 下一步：配置 OpenClaw 的 openclaw.json
